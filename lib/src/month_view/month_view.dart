@@ -622,6 +622,7 @@ class _MonthPageBuilder<T> extends StatelessWidget {
         ),
         itemCount: 42,
         shrinkWrap: true,
+        padding: EdgeInsets.zero,
         itemBuilder: (context, index) {
           final events = controller.getEventsOnDay(monthDays[index]);
           return GestureDetector(
